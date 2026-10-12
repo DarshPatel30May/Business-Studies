@@ -198,7 +198,7 @@ export const marketing: TopicContent = {
           { id: "mkt-market-intermediate", term: "Intermediate market", definition: "A market of wholesalers and retailers who buy finished goods to resell for a profit.", example: "Woolworths buying grocery brands to resell to consumers." },
           { id: "mkt-market-consumer", term: "Consumer market", definition: "A market of individuals and households who buy goods and services for personal use.", example: "Shoppers buying groceries, clothing, streaming subscriptions." },
           { id: "mkt-market-mass", term: "Mass market", definition: "A large, undifferentiated market where the business offers the same product to all customers with one marketing mix.", example: "Basic consumer staples such as bread and milk." },
-          { id: "mkt-market-niche", term: "Niche market", definition: "A small, specific segment of a larger market with distinct needs, served with a specialised product.", example: "Gluten-free bakery products; premium electric bicycles.", advanced: "Niche marketing reduces direct competition and allows premium pricing, but the small market limits growth and leaves the business vulnerable if tastes change." },
+          { id: "mkt-market-niche", term: "Niche market", definition: "A small, specific segment of a larger market with distinct needs, served with a specialised product.", simple: "A small, specialised group of customers with particular needs.", example: "Gluten-free bakery products; premium electric bicycles.", advanced: "Niche marketing reduces direct competition and allows premium pricing, but the small market limits growth and leaves the business vulnerable if tastes change." },
         ],
       },
     ],
@@ -266,7 +266,7 @@ export const marketing: TopicContent = {
           {
             id: "mkt-law-misleading",
             term: "Deceptive and misleading advertising",
-            definition: "Advertising or conduct that misleads or deceives consumers, or is likely to — for example false claims about price, quality, origin or benefits.",
+            definition: "Advertising or conduct that misleads or deceives consumers, or is likely to — for example false claims about price, quality, origin or benefits.", simple: "Ads and claims must not trick or mislead customers — breaking this law brings big fines.",
             explanation: "The ACL prohibits misleading or deceptive conduct (s 18) and false or misleading representations (s 29), including bait advertising, false 'was/now' prices and misleading environmental claims. Since November 2022 maximum penalties for companies are the greater of $50 million, three times the benefit obtained, or 30% of adjusted turnover during the breach period.",
             example: "In 2024 the Federal Court ordered Qantas to pay a $100 million penalty after Qantas admitted it had continued selling tickets on flights it had already cancelled (ACCC proceedings commenced 2023).",
           },
@@ -280,7 +280,7 @@ export const marketing: TopicContent = {
           {
             id: "mkt-law-implied",
             term: "Implied conditions (now consumer guarantees)",
-            definition: "Conditions that automatically apply to a sale even if not stated — e.g. that goods are of acceptable quality, fit for purpose and match their description.",
+            definition: "Conditions that automatically apply to a sale even if not stated — e.g. that goods are of acceptable quality, fit for purpose and match their description.", simple: "Automatic customer rights — products must work, be safe and match their description.",
             explanation: "Under the former Trade Practices Act these were 'implied conditions and warranties'. Under the ACL they are called 'consumer guarantees'. They cannot be excluded by the business and give consumers a right to a repair, replacement or refund (depending on whether the failure is major or minor).",
           },
           {
@@ -320,7 +320,7 @@ export const marketing: TopicContent = {
           { id: "mkt-eth-taste", term: "Good taste in advertising", definition: "Avoiding offensive, discriminatory or exploitative content. Ad Standards administers the AANA Code of Ethics (self-regulation).", example: "Advertisements that are sexist or exploit children can be the subject of complaints to Ad Standards and withdrawn." },
           { id: "mkt-eth-health", term: "Products that may damage health", definition: "Marketing products such as tobacco, alcohol, gambling, vaping products and high-sugar foods responsibly, especially to young people.", example: "Ethical issue: marketing junk food to children. Government regulation restricts tobacco advertising and requires health warnings." },
           { id: "mkt-eth-competition", term: "Engaging in fair competition", definition: "Competing on the merits of the product rather than through unfair practices such as misuse of market power, collusion or false comparisons.", example: "Unethical/illegal: competitors agreeing to fix prices (a cartel), which is prohibited under the Competition and Consumer Act 2010." },
-          { id: "mkt-eth-sugging", term: "Sugging (selling under the guise of research)", definition: "Pretending to conduct market research when the real purpose is to sell a product.", explanation: "It is unethical because it deceives people and undermines genuine market research. The Australian Data and Insights Association's code prohibits it for members." },
+          { id: "mkt-eth-sugging", term: "Sugging (selling under the guise of research)", definition: "Pretending to conduct market research when the real purpose is to sell a product.", simple: "Pretending to do a survey when you're really trying to sell something.", explanation: "It is unethical because it deceives people and undermines genuine market research. The Australian Data and Insights Association's code prohibits it for members." },
         ],
       },
       {
@@ -373,7 +373,7 @@ export const marketing: TopicContent = {
           {
             id: "mkt-swot-def",
             term: "SWOT analysis",
-            definition: "An analysis of internal Strengths and Weaknesses and external Opportunities and Threats.",
+            definition: "An analysis of internal Strengths and Weaknesses and external Opportunities and Threats.", simple: "List what you're good and bad at (inside the business), and the chances and dangers outside it.",
             explanation: "Strengths and weaknesses are within the business's control (e.g. brand, skilled staff, outdated technology). Opportunities and threats come from the external environment (e.g. a growing market, new competitors, economic downturn). Marketers use strengths to exploit opportunities and address weaknesses to reduce threats.",
           },
         ],
@@ -385,7 +385,7 @@ export const marketing: TopicContent = {
           {
             id: "mkt-plc-def",
             term: "Product life cycle (PLC)",
-            definition: "The stages a product passes through from launch to withdrawal: introduction, growth, maturity and decline.",
+            definition: "The stages a product passes through from launch to withdrawal: introduction, growth, maturity and decline.", simple: "Products are born, grow, peak and fade — and marketing changes at each stage.",
             explanation: "Sales, profit, competition and the appropriate marketing mix change at each stage. Extension strategies (new features, new markets, repackaging) can extend the maturity stage.",
           },
         ],
@@ -397,14 +397,14 @@ export const marketing: TopicContent = {
           {
             id: "mkt-research",
             term: "Market research",
-            definition: "The systematic collection, recording and analysis of data about customers, competitors and the market to support marketing decisions.",
+            definition: "The systematic collection, recording and analysis of data about customers, competitors and the market to support marketing decisions.", simple: "Collecting facts about customers and competitors so decisions aren't guesses.",
             explanation: "Steps: define the problem → plan the research → collect data → analyse → report/act. Primary data is collected first-hand (surveys, focus groups, observation); secondary data already exists (ABS statistics, industry reports, internal sales records). Research identifies customer needs and market opportunities and reduces the risk of decisions.",
             advanced: "Evaluate research: primary data is specific and current but costly and slow; secondary data is cheap and quick but may be outdated or not specific to the problem.",
           },
           {
             id: "mkt-objectives",
             term: "Establishing market objectives",
-            definition: "Setting specific, measurable goals that the marketing strategy aims to achieve, consistent with the business's overall objectives.",
+            definition: "Setting specific, measurable goals that the marketing strategy aims to achieve, consistent with the business's overall objectives.", simple: "Clear, measurable marketing goals — e.g. 'grow market share from 10% to 12% this year'.",
             explanation: "Common objectives: increase market share, increase sales revenue or volume, expand the product range, improve customer satisfaction or brand awareness. Good objectives are SMART (specific, measurable, achievable, realistic, time-bound) so they can be monitored.",
             example: "'Increase online sales revenue by 20% in the 2026–27 financial year' is measurable; 'sell more online' is not.",
           },
@@ -417,7 +417,7 @@ export const marketing: TopicContent = {
           {
             id: "mkt-target",
             term: "Identifying target markets",
-            definition: "Selecting the group(s) of customers at which the marketing strategy will be aimed.",
+            definition: "Selecting the group(s) of customers at which the marketing strategy will be aimed.", simple: "The group of customers you're mainly trying to sell to.",
             explanation: "The primary target market is the main group the business focuses on and that generates most sales; the secondary target market is a smaller or less important group that still offers sales potential. Target markets are described by customer characteristics: demographic, geographic, psychographic and behavioural.",
             example: "A sports drink's primary target market may be active 16–35-year-olds; a secondary target market may be parents buying for children's sport.",
           },
@@ -470,7 +470,7 @@ export const marketing: TopicContent = {
           {
             id: "mkt-seg-def",
             term: "Market segmentation",
-            definition: "Dividing a total market into smaller groups of customers with similar characteristics and needs.",
+            definition: "Dividing a total market into smaller groups of customers with similar characteristics and needs.", simple: "Split a big market into smaller groups of similar customers.",
             explanation: "Bases for segmentation: demographic (age, income, gender, occupation), geographic (location, climate), psychographic (lifestyle, values, personality) and behavioural (usage rate, loyalty, benefits sought).",
           },
           {
@@ -482,7 +482,7 @@ export const marketing: TopicContent = {
           {
             id: "mkt-positioning",
             term: "Positioning",
-            definition: "Creating a distinct image of the product in the minds of target customers relative to competitors.",
+            definition: "Creating a distinct image of the product in the minds of target customers relative to competitors.", simple: "The picture you want customers to have of your product compared with rivals.",
             explanation: "Positioning can be based on price/quality, features, benefits, usage occasion or competitor comparison. Perceptual (positioning) maps help visualise where products sit.",
             example: "Within the Qantas Group, Qantas is positioned on service and reliability, while Jetstar is positioned on low fares.",
           },
@@ -610,7 +610,7 @@ export const marketing: TopicContent = {
       {
         kind: "concepts",
         items: [
-          { id: "mkt-channels", term: "Distribution channels", definition: "The routes products take from producer to consumer, possibly through intermediaries (wholesalers, retailers, agents).", explanation: "Direct: producer → consumer (e.g. online store). Indirect: producer → retailer → consumer; producer → wholesaler → retailer → consumer. Longer channels increase reach but reduce the producer's margin and control." },
+          { id: "mkt-channels", term: "Distribution channels", definition: "The routes products take from producer to consumer, possibly through intermediaries (wholesalers, retailers, agents).", simple: "The path a product takes from the maker to the customer.", explanation: "Direct: producer → consumer (e.g. online store). Indirect: producer → retailer → consumer; producer → wholesaler → retailer → consumer. Longer channels increase reach but reduce the producer's margin and control." },
           { id: "mkt-intensive", term: "Intensive distribution", definition: "Making the product available in as many outlets as possible.", explanation: "Suits convenience goods bought frequently (soft drinks, snacks)." },
           { id: "mkt-selective", term: "Selective distribution", definition: "Using a limited number of carefully chosen outlets.", explanation: "Suits shopping goods where customers compare (appliances, clothing brands)." },
           { id: "mkt-exclusive", term: "Exclusive distribution", definition: "Using only one or very few outlets in a geographic area.", explanation: "Supports prestige and close control (luxury cars, designer fashion)." },
@@ -628,7 +628,7 @@ export const marketing: TopicContent = {
         items: [
           { id: "mkt-people", term: "People", definition: "Everyone involved in delivering the service — employees and, often, other customers.", explanation: "Recruitment, training, presentation and motivation of staff (links to HR) directly affect service quality." },
           { id: "mkt-processes", term: "Processes", definition: "The procedures, systems and flow of activities by which a service is delivered.", explanation: "Efficient, convenient processes (online booking, short queues, easy returns) improve customer satisfaction." },
-          { id: "mkt-physical-evidence", term: "Physical evidence", definition: "The tangible cues that help customers judge an intangible service — premises, décor, uniforms, website, brochures, receipts.", explanation: "Physical evidence signals quality and reinforces positioning (e.g. a premium airline lounge)." },
+          { id: "mkt-physical-evidence", term: "Physical evidence", definition: "The tangible cues that help customers judge an intangible service — premises, décor, uniforms, website, brochures, receipts.", simple: "The things customers can see that hint at service quality — the shop, uniforms, the website.", explanation: "Physical evidence signals quality and reinforces positioning (e.g. a premium airline lounge)." },
         ],
       },
       {

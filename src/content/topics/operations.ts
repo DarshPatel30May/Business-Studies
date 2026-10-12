@@ -165,7 +165,7 @@ export const operations: TopicContent = {
           {
             id: "ops-goods-services",
             term: "Goods and/or services in different industries",
-            definition: "Goods are tangible products that can be stored; services are intangible activities that are usually produced and consumed at the same time.",
+            definition: "Goods are tangible products that can be stored; services are intangible activities that are usually produced and consumed at the same time.", simple: "Goods are things you can touch and store (a chair); services are things done for you that can't be stored (a flight).",
             explanation: "Most businesses provide a mix (e.g. a restaurant provides food — a good — and table service). Manufacturing is the secondary industry; services are the tertiary industry. Services cannot be stored, are often customised and have high customer contact, so operations focus on scheduling staff, managing queues and service quality.",
             example: "A Qantas flight (service) cannot be stored — an empty seat after departure is lost revenue — so operations focus on scheduling, capacity and on-time performance.",
             advanced: "For the 'describe operations management in a tertiary industry' requirement, explain features of services: intangibility, inseparability (produced and consumed together), perishability and variability, and how they shape operations decisions.",
@@ -433,14 +433,14 @@ export const operations: TopicContent = {
           {
             id: "ops-transformed",
             term: "Transformed resources",
-            definition: "Inputs that are changed or converted by the operations process: materials, information and customers.",
+            definition: "Inputs that are changed or converted by the operations process: materials, information and customers.", simple: "The 'raw' things that get changed — like ingredients becoming a meal, or a patient becoming healthy.",
             explanation: "Materials are physical inputs (timber, steel, food). Information is processed (e.g. an accounting firm transforms financial data into reports). Customers themselves are transformed in many services (a passenger is moved, a patient is treated, a student is educated).",
             example: "In a hospital, the patient (customer) is the main transformed resource; in a car factory, steel and components are.",
           },
           {
             id: "ops-transforming",
             term: "Transforming resources",
-            definition: "Inputs that carry out the transformation but are not themselves converted: human resources and facilities.",
+            definition: "Inputs that carry out the transformation but are not themselves converted: human resources and facilities.", simple: "The people and equipment that do the changing — the chef and the oven, not the food.",
             explanation: "Human resources provide skills, effort and knowledge. Facilities are buildings, plant, machinery and technology. They are used repeatedly across many production cycles.",
             example: "Baristas (human resources) and espresso machines (facilities) transform beans and milk (materials) into coffee.",
           },
@@ -478,7 +478,7 @@ export const operations: TopicContent = {
           {
             id: "ops-visibility",
             term: "Visibility (customer contact)",
-            definition: "How much of the operations process is seen by, or involves, the customer.",
+            definition: "How much of the operations process is seen by, or involves, the customer.", simple: "How much of the work the customer can see — a hair salon is very visible, a factory is not.",
             explanation: "High-visibility operations (a restaurant, a hair salon) must manage presentation, waiting times and staff interaction skills, which raises costs. Low-visibility operations (a factory, a back-office) can focus on efficiency.",
           },
           {
@@ -490,13 +490,13 @@ export const operations: TopicContent = {
           {
             id: "ops-gantt",
             term: "Gantt chart",
-            definition: "A bar chart showing each activity of a project against a timeline, including start and finish times and any overlap between tasks.",
+            definition: "A bar chart showing each activity of a project against a timeline, including start and finish times and any overlap between tasks.", simple: "A timeline with a bar for each task, so you can see what happens when.",
             explanation: "Gantt charts are easy to read and useful for monitoring progress, but they do not clearly show dependencies between tasks.",
           },
           {
             id: "ops-cpa",
             term: "Critical path analysis (CPA)",
-            definition: "A scheduling method that identifies the longest sequence of dependent activities — the critical path — which determines the shortest possible project completion time.",
+            definition: "A scheduling method that identifies the longest sequence of dependent activities — the critical path — which determines the shortest possible project completion time.", simple: "Find the longest chain of tasks that must happen one after another — that chain sets the earliest finish date.",
             explanation: "Activities on the critical path have zero float: any delay delays the whole project. Non-critical activities have float (slack) and can be delayed by that amount without affecting completion.",
             advanced: "Float = latest start − earliest start. To shorten a project, managers must shorten critical activities (e.g. extra staff or overtime) — shortening non-critical activities does not reduce total time.",
           },
@@ -522,13 +522,13 @@ export const operations: TopicContent = {
           {
             id: "ops-layout",
             term: "Process layout",
-            definition: "The physical arrangement of equipment, workstations and people in a facility.",
+            definition: "The physical arrangement of equipment, workstations and people in a facility.", simple: "How the workplace is arranged so people and materials move smoothly.",
             explanation: "Layout affects the flow of materials and customers, efficiency and safety. Main types: process layout (similar equipment grouped, e.g. a hospital's departments), product/line layout (sequential production line, e.g. car assembly), fixed-position layout (product stays still, e.g. building a ship or house) and office layout.",
           },
           {
             id: "ops-monitoring",
             term: "Monitoring, control and improvement",
-            definition: "Monitoring measures actual performance; control compares it with planned standards and corrects deviations; improvement uses the information to make processes better.",
+            definition: "Monitoring measures actual performance; control compares it with planned standards and corrects deviations; improvement uses the information to make processes better.", simple: "Check how things are going, fix problems, then keep making the process better.",
             explanation: "Businesses use key performance indicators (KPIs) such as defect rates, delivery times and waiting times. Benchmarking compares performance with competitors or best practice. Improvement can be continuous (small steps) or a breakthrough (major redesign).",
           },
         ],
@@ -573,7 +573,7 @@ export const operations: TopicContent = {
           {
             id: "ops-warranties",
             term: "Warranties",
-            definition: "A promise by the business about the quality of a good or service, setting out what it will do (repair, replace, refund) if the product is faulty within a set period.",
+            definition: "A promise by the business about the quality of a good or service, setting out what it will do (repair, replace, refund) if the product is faulty within a set period.", simple: "A promise to fix, replace or refund a product if it's faulty.",
             explanation: "Warranties reduce customer risk and signal quality. Under the Australian Consumer Law, consumer guarantees apply automatically regardless of any warranty offered, and a warranty against defects must meet set requirements. Warranty claims cost money, so they give operations an incentive to improve quality.",
             advanced: "Link warranties to quality management: high warranty claim rates signal quality problems; long warranties (e.g. some car makers' 7-year warranties) are a differentiation strategy that requires high reliability.",
           },
@@ -725,7 +725,7 @@ export const operations: TopicContent = {
           {
             id: "ops-inv-meaning",
             term: "Inventory",
-            definition: "The stock of raw materials, work-in-progress and finished goods held by a business.",
+            definition: "The stock of raw materials, work-in-progress and finished goods held by a business.", simple: "All the stock a business keeps — materials, half-made items and finished products.",
             explanation: "Inventory is a current asset on the balance sheet. Too much ties up cash and incurs holding costs; too little risks stock-outs and lost sales.",
           },
           {
@@ -743,20 +743,20 @@ export const operations: TopicContent = {
           {
             id: "ops-fifo",
             term: "FIFO (first-in-first-out)",
-            definition: "An inventory method that assumes the oldest stock is used or sold first.",
+            definition: "An inventory method that assumes the oldest stock is used or sold first.", simple: "Sell the oldest stock first — like milk at the front of the fridge.",
             explanation: "FIFO matches physical rotation of perishable or fashion goods, reducing spoilage and obsolescence. When prices are rising, FIFO gives a lower cost of goods sold and higher reported profit, with closing stock valued at recent prices.",
           },
           {
             id: "ops-lifo",
             term: "LIFO (last-in-first-out)",
-            definition: "An inventory method that assumes the most recently purchased stock is used or sold first.",
+            definition: "An inventory method that assumes the most recently purchased stock is used or sold first.", simple: "Use the newest stock first — like taking from the top of a sand pile.",
             explanation: "When prices are rising, LIFO gives a higher cost of goods sold and lower reported profit. Physically, it suits non-perishable stock piled up and taken from the top (e.g. sand, gravel).",
             advanced: "LIFO is in the HSC syllabus, but it is not permitted for financial reporting under Australian Accounting Standards (AASB 102 Inventories). It can still be discussed as a stock rotation/valuation concept.",
           },
           {
             id: "ops-jit",
             term: "JIT (just-in-time)",
-            definition: "An inventory strategy in which materials arrive exactly when needed for production, and products are made only when ordered, so minimal stock is held.",
+            definition: "An inventory strategy in which materials arrive exactly when needed for production, and products are made only when ordered, so minimal stock is held.", simple: "Order stock just before you need it, so almost nothing sits in the warehouse.",
             explanation: "JIT reduces holding costs and waste and exposes inefficiencies. It requires reliable suppliers, accurate demand information and efficient communication — any disruption can stop production.",
             example: "Toyota developed JIT as a core element of the Toyota Production System.",
           },

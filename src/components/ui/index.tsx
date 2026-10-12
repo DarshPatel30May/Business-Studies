@@ -140,12 +140,13 @@ export function NumberField({ label, value, onChange, prefix, suffix, step = 1, 
           min={min}
           max={max}
           aria-invalid={!!error}
+          aria-describedby={error || hint ? `${id}-msg` : undefined}
           onChange={(e) => onChange(e.target.value === "" ? 0 : Number(e.target.value))}
           className="w-full min-w-0 rounded-xl bg-transparent px-3 py-2 text-sm text-stone-900 tabular-nums outline-none dark:text-stone-100"
         />
         {suffix && <span className="pr-3 text-sm text-stone-500">{suffix}</span>}
       </div>
-      {error ? <span className="mt-1 block text-xs text-red-600 dark:text-red-400">{error}</span> : hint ? <span className="mt-1 block text-xs text-stone-500">{hint}</span> : null}
+      {error ? <span id={`${id}-msg`} className="mt-1 block text-xs text-red-600 dark:text-red-400">{error}</span> : hint ? <span id={`${id}-msg`} className="mt-1 block text-xs text-stone-500">{hint}</span> : null}
     </div>
   );
 }

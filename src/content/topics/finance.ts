@@ -158,11 +158,11 @@ export const finance: TopicContent = {
       {
         kind: "concepts",
         items: [
-          { id: "fin-obj-profitability", term: "Profitability", definition: "The ability of a business to maximise its profits.", explanation: "Measured by the gross profit, net profit and return on equity ratios. Profit is needed to reward owners and fund growth." },
-          { id: "fin-obj-growth", term: "Growth", definition: "The ability of a business to increase its size in the longer term.", explanation: "Shown by increases in sales, assets, market share, profit and the number of employees or locations. Growth depends on using assets to generate sales and reinvesting profits." },
-          { id: "fin-obj-efficiency", term: "Efficiency", definition: "The ability of a business to minimise its costs and manage its assets so that maximum profit is achieved with the lowest possible level of assets.", explanation: "Measured by the expense ratio and accounts receivable turnover ratio." },
-          { id: "fin-obj-liquidity", term: "Liquidity", definition: "The extent to which a business can meet its short-term financial commitments (usually within 12 months).", explanation: "Measured by the current ratio. A business can be profitable yet fail through lack of liquidity." },
-          { id: "fin-obj-solvency", term: "Solvency", definition: "The extent to which a business can meet its financial commitments in the longer term.", explanation: "Measured by the debt to equity (gearing) ratio. It shows the risk of the business's capital structure." },
+          { id: "fin-obj-profitability", term: "Profitability", definition: "The ability of a business to maximise its profits.", simple: "Making as much profit as possible.", explanation: "Measured by the gross profit, net profit and return on equity ratios. Profit is needed to reward owners and fund growth." },
+          { id: "fin-obj-growth", term: "Growth", definition: "The ability of a business to increase its size in the longer term.", simple: "Getting bigger over time — more sales, assets, customers.", explanation: "Shown by increases in sales, assets, market share, profit and the number of employees or locations. Growth depends on using assets to generate sales and reinvesting profits." },
+          { id: "fin-obj-efficiency", term: "Efficiency", definition: "The ability of a business to minimise its costs and manage its assets so that maximum profit is achieved with the lowest possible level of assets.", simple: "Getting the most profit from the least cost and the fewest assets.", explanation: "Measured by the expense ratio and accounts receivable turnover ratio." },
+          { id: "fin-obj-liquidity", term: "Liquidity", definition: "The extent to which a business can meet its short-term financial commitments (usually within 12 months).", simple: "Having enough cash or near-cash to pay the bills due soon.", explanation: "Measured by the current ratio. A business can be profitable yet fail through lack of liquidity." },
+          { id: "fin-obj-solvency", term: "Solvency", definition: "The extent to which a business can meet its financial commitments in the longer term.", simple: "Being able to pay all debts in the long run — not being drowned in debt.", explanation: "Measured by the debt to equity (gearing) ratio. It shows the risk of the business's capital structure." },
           {
             id: "fin-short-long",
             term: "Short-term and long-term objectives",
@@ -203,7 +203,7 @@ export const finance: TopicContent = {
           {
             id: "fin-internal",
             term: "Internal source of finance — retained profits",
-            definition: "Profits kept in the business rather than distributed to owners as dividends or drawings.",
+            definition: "Profits kept in the business rather than distributed to owners as dividends or drawings.", simple: "Using profits the business has already made instead of borrowing.",
             explanation: "Retained profits are the cheapest and most accessible source: no interest, no repayments, no loss of control. However, they are limited in amount and owners receive lower dividends.",
           },
           {
@@ -222,9 +222,9 @@ export const finance: TopicContent = {
       {
         kind: "concepts",
         items: [
-          { id: "fin-overdraft", term: "Overdraft", definition: "A bank arrangement allowing a business to withdraw more than the balance of its account, up to an agreed limit.", explanation: "Flexible and quick for short-term cash shortfalls. Interest is charged only on the amount overdrawn, but rates are relatively high and the bank can reduce the limit." },
+          { id: "fin-overdraft", term: "Overdraft", definition: "A bank arrangement allowing a business to withdraw more than the balance of its account, up to an agreed limit.", simple: "Being allowed to take your bank account below zero, up to a limit.", explanation: "Flexible and quick for short-term cash shortfalls. Interest is charged only on the amount overdrawn, but rates are relatively high and the bank can reduce the limit." },
           { id: "fin-commercial-bills", term: "Commercial bills", definition: "Short-term loans (usually 30–180 days) issued by a financial institution, often for amounts of $100,000 or more, repaid in full at the end of the term.", explanation: "Used for larger short-term needs; typically secured against business assets." },
-          { id: "fin-factoring", term: "Factoring", definition: "Selling accounts receivable to a factoring company (a 'factor') at a discount in exchange for immediate cash.", explanation: "Improves cash flow immediately and the factor may handle collection, but the business receives less than the full value of its receivables. Customers may view it negatively." },
+          { id: "fin-factoring", term: "Factoring", definition: "Selling accounts receivable to a factoring company (a 'factor') at a discount in exchange for immediate cash.", simple: "Selling the money customers owe you to another company, so you get cash now (minus a fee).", explanation: "Improves cash flow immediately and the factor may handle collection, but the business receives less than the full value of its receivables. Customers may view it negatively." },
         ],
       },
       {
@@ -239,7 +239,7 @@ export const finance: TopicContent = {
           { id: "fin-mortgage", term: "Mortgage", definition: "A long-term loan secured by property (land and buildings), repaid with interest over a set period.", explanation: "Lower interest than unsecured loans because of the security; the lender can sell the property if repayments are not made." },
           { id: "fin-debentures", term: "Debentures", definition: "Securities issued by a company to investors for a fixed rate of interest over a fixed period, secured against the company's assets.", explanation: "Raise large amounts from the public; holders rank ahead of unsecured creditors and shareholders if the company fails." },
           { id: "fin-unsecured-notes", term: "Unsecured notes", definition: "Loans from investors for a set period that are not backed by security over assets.", explanation: "Because they are riskier for investors, they pay a higher interest rate than debentures." },
-          { id: "fin-leasing", term: "Leasing", definition: "Paying for the use of an asset owned by another party (the lessor) for a period of time, without buying it.", explanation: "Conserves cash and avoids large capital outlays; lease payments are generally tax deductible. Over time the total cost can exceed the purchase price, and the business does not own the asset at the end (unless the agreement provides for it)." },
+          { id: "fin-leasing", term: "Leasing", definition: "Paying for the use of an asset owned by another party (the lessor) for a period of time, without buying it.", simple: "Renting equipment or vehicles instead of buying them.", explanation: "Conserves cash and avoids large capital outlays; lease payments are generally tax deductible. Over time the total cost can exceed the purchase price, and the business does not own the asset at the end (unless the agreement provides for it)." },
         ],
       },
       {
@@ -253,7 +253,7 @@ export const finance: TopicContent = {
         items: [
           { id: "fin-ordinary-shares", term: "Ordinary shares", definition: "Units of ownership in a company; shareholders are entitled to dividends (if declared) and to vote at general meetings.", explanation: "Issued through the Australian Securities Exchange (ASX) for listed public companies." },
           { id: "fin-new-issue", term: "New issue", definition: "A security issued to the market for the first time, for example through an initial public offering (IPO) supported by a prospectus.", explanation: "Raises large amounts but is expensive (underwriting, legal, prospectus costs) and must comply with Corporations Act and ASIC requirements." },
-          { id: "fin-rights-issue", term: "Rights issue", definition: "An offer of new shares to existing shareholders in proportion to their current holdings, usually at a discount.", explanation: "Raises capital without diluting the ownership proportions of shareholders who take up their rights." },
+          { id: "fin-rights-issue", term: "Rights issue", definition: "An offer of new shares to existing shareholders in proportion to their current holdings, usually at a discount.", simple: "Offering existing shareholders the chance to buy more shares, usually at a discount.", explanation: "Raises capital without diluting the ownership proportions of shareholders who take up their rights." },
           { id: "fin-placement", term: "Placement", definition: "Selling new shares directly to selected (usually institutional) investors without a prospectus.", explanation: "Fast and cheap, but dilutes existing shareholders who are not offered shares. ASX Listing Rules limit the size of placements without shareholder approval." },
           { id: "fin-spp", term: "Share purchase plan (SPP)", definition: "An offer to existing shareholders to buy a limited dollar amount of additional shares, usually at a discount and without brokerage.", explanation: "Often used alongside a placement so retail shareholders can also participate." },
           { id: "fin-private-equity", term: "Private equity", definition: "Money invested in a company that is not listed on a stock exchange, by private investors or private equity funds.", explanation: "Provides capital and expertise for expansion or restructuring; investors usually seek significant control and a high return, often within several years." },
@@ -356,7 +356,7 @@ export const finance: TopicContent = {
           {
             id: "fin-matching",
             term: "Matching the terms and source of finance to business purpose",
-            definition: "Using short-term finance for short-term needs and long-term finance for long-term assets.",
+            definition: "Using short-term finance for short-term needs and long-term finance for long-term assets.", simple: "Use short-term loans for short-term needs and long-term finance for long-lasting assets.",
             explanation: "Working capital needs (stock, wages) should be funded by short-term sources such as an overdraft or trade credit; non-current assets (buildings, major equipment) by long-term sources such as mortgages, debentures, leasing or equity. Mismatching — e.g. buying a factory with an overdraft — risks a liquidity crisis when the short-term debt falls due.",
           },
         ],
@@ -374,19 +374,19 @@ export const finance: TopicContent = {
           {
             id: "fin-income-statement",
             term: "Income statement",
-            definition: "A statement showing the revenue earned and expenses incurred over a period, and the resulting profit or loss.",
+            definition: "A statement showing the revenue earned and expenses incurred over a period, and the resulting profit or loss.", simple: "Money earned minus money spent over a period = profit (or loss).",
             explanation: "Structure: Sales − Cost of goods sold = Gross profit; Gross profit − Expenses = Net profit. It measures profitability over a period of time.",
           },
           {
             id: "fin-balance-sheet",
             term: "Balance sheet",
-            definition: "A statement of the assets, liabilities and owners' equity of a business at a particular point in time.",
+            definition: "A statement of the assets, liabilities and owners' equity of a business at a particular point in time.", simple: "A snapshot: what the business owns, what it owes, and what belongs to the owners.",
             explanation: "Based on the accounting equation: Assets = Liabilities + Owners' equity. Assets and liabilities are classified as current (within 12 months) or non-current. It shows liquidity and solvency.",
           },
           {
             id: "fin-cash-flow-statement",
             term: "Cash flow statement",
-            definition: "A statement showing the movement of cash into and out of a business over a period, classified as operating, investing and financing activities.",
+            definition: "A statement showing the movement of cash into and out of a business over a period, classified as operating, investing and financing activities.", simple: "Shows where cash actually came from and went to during the period.",
             explanation: "Operating: day-to-day trading (receipts from customers, payments to suppliers and employees). Investing: buying and selling non-current assets. Financing: borrowing, repaying loans, issuing shares, paying dividends. It shows whether the business can pay its debts as they fall due.",
             advanced: "Profit ≠ cash. A profitable business can run out of cash (e.g. sales on credit not yet collected, cash spent on inventory or equipment).",
           },
@@ -407,13 +407,13 @@ export const finance: TopicContent = {
           {
             id: "fin-ratio-current",
             term: "Liquidity — current ratio",
-            definition: "Current ratio = current assets ÷ current liabilities. Expressed as a ratio, e.g. 1.6 : 1.",
+            definition: "Current ratio = current assets ÷ current liabilities. Expressed as a ratio, e.g. 1.6 : 1.", simple: "For every $1 the business owes soon, how many dollars of short-term assets does it have?",
             explanation: "Shows whether the business can meet its short-term debts. Textbooks commonly cite about 1.5–2 : 1 as sound, but the right level depends on the industry. Below 1 : 1 suggests liquidity problems; very high ratios may mean idle resources.",
           },
           {
             id: "fin-ratio-de",
             term: "Gearing — debt to equity ratio",
-            definition: "Debt to equity ratio = total liabilities ÷ total equity. Expressed as a ratio, e.g. 0.8 : 1.",
+            definition: "Debt to equity ratio = total liabilities ÷ total equity. Expressed as a ratio, e.g. 0.8 : 1.", simple: "For every $1 the owners put in, how many dollars are borrowed?",
             explanation: "Shows the extent to which the business relies on debt rather than owners' funds — a measure of solvency. A high ratio means higher financial risk; textbooks commonly treat below 1 : 1 as lower risk.",
           },
           {
@@ -445,7 +445,7 @@ export const finance: TopicContent = {
           {
             id: "fin-comparative",
             term: "Comparative ratio analysis",
-            definition: "Comparing ratios over different time periods, against standards, and with similar businesses to give them meaning.",
+            definition: "Comparing ratios over different time periods, against standards, and with similar businesses to give them meaning.", simple: "A ratio only means something when you compare it — with last year, a target or similar businesses.",
             explanation: "A single ratio means little on its own. Trends over time show improvement or deterioration; standards (budgets, targets, industry benchmarks) show whether performance is acceptable; comparison with similar businesses (same industry and size) shows competitiveness.",
             advanced: "Strengths: simple, comparable, highlights problems early. Limitations: based on historical data; businesses may use different accounting methods; industry averages hide differences; ratios show symptoms, not causes.",
           },

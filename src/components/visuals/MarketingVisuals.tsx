@@ -434,8 +434,8 @@ export function PositioningMap() {
         <ResponsiveContainer>
           <ScatterChart margin={{ top: 10, right: 20, bottom: 20, left: 0 }}>
             <CartesianGrid {...ch.gridProps} vertical />
-            <XAxis type="number" dataKey="price" domain={[0, 10]} {...ch.axisProps} tick={false} label={{ value: "Price: low → high", position: "insideBottom", offset: -5, fill: ch.axis, fontSize: 12 }} />
-            <YAxis type="number" dataKey="quality" domain={[0, 10]} {...ch.axisProps} tick={false} label={{ value: "Perceived quality: low → high", angle: -90, position: "insideLeft", fill: ch.axis, fontSize: 12, dx: 15 }} />
+            <XAxis type="number" dataKey="price" domain={[0, 10]} {...ch.axisProps} tick={false} label={{ value: "Price →", position: "insideBottom", offset: -5, fill: ch.axis, fontSize: 12 }} />
+            <YAxis type="number" dataKey="quality" domain={[0, 10]} {...ch.axisProps} tick={false} label={{ value: "Perceived quality →", angle: -90, position: "insideLeft", fill: ch.axis, fontSize: 12, dx: 15, dy: 50 }} />
             <ZAxis dataKey="z" range={[220, 220]} />
             <ReferenceLine x={5} stroke={ch.muted} />
             <ReferenceLine y={5} stroke={ch.muted} />
@@ -446,7 +446,7 @@ export function PositioningMap() {
               ))}
             </Scatter>
             {BRANDS.map((x) => (
-              <ReferenceDot key={x.name} x={x.price} y={x.quality} r={0} label={{ value: x.name, position: "top", fill: ch.text, fontSize: 11 }} />
+              <ReferenceDot key={x.name} x={x.price} y={x.quality} r={0} label={{ value: x.name, position: "top", offset: 14, fill: ch.text, fontSize: 11 }} />
             ))}
           </ScatterChart>
         </ResponsiveContainer>

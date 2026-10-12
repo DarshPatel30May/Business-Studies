@@ -224,7 +224,7 @@ export const hr: TopicContent = {
             id: "hr-nes",
             term: "Minimum employment standards (National Employment Standards)",
             definition: "Minimum entitlements in the Fair Work Act 2009 that apply to all national-system employees and cannot be removed by any award, agreement or contract.",
-            explanation: "They include: maximum weekly hours (38 plus reasonable additional hours); requests for flexible working arrangements; offers and requests for casual conversion; parental leave; annual leave; personal/carer's and compassionate leave; family and domestic violence leave; community service leave; long service leave; public holidays; notice of termination and redundancy pay; and the Fair Work Information Statement (and Casual Employment Information Statement). The national minimum wage is set separately by the Fair Work Commission.",
+            explanation: "They include: maximum weekly hours (38 plus reasonable additional hours); requests for flexible working arrangements; casual employment pathways to permanent work (since August 2024, an 'employee choice' pathway); parental leave; annual leave; personal/carer's and compassionate leave; family and domestic violence leave; community service leave; long service leave; public holidays; notice of termination and redundancy pay; and the Fair Work Information Statement (and Casual Employment Information Statement). The national minimum wage is set separately by the Fair Work Commission.",
           },
           {
             id: "hr-awards",

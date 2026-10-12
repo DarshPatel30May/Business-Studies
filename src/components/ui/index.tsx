@@ -10,7 +10,7 @@ export function Card({ className, children, id }: { className?: string; children
     <div
       id={id}
       className={cx(
-        "print-card rounded-2xl border border-stone-200/80 bg-white shadow-[0_1px_2px_rgba(28,25,23,0.04)] dark:border-stone-800 dark:bg-night-2",
+        "print-card min-w-0 rounded-2xl border border-stone-200/80 bg-white shadow-[0_1px_2px_rgba(28,25,23,0.04)] dark:border-stone-800 dark:bg-night-2",
         className,
       )}
     >
@@ -106,8 +106,8 @@ export function Segmented<T extends string>({ value, onChange, options, label, s
 export function Select<T extends string>({ label, value, onChange, options, className }: { label: string; value: T; onChange: (v: T) => void; options: { value: T; label: string }[]; className?: string }) {
   const id = useId();
   return (
-    <label htmlFor={id} className={cx("block", className)}>
-      <span className="mb-1 block text-xs font-semibold text-stone-600 dark:text-stone-400">{label}</span>
+    <div className={cx("block", className)}>
+      <label htmlFor={id} className="mb-1 block text-xs font-semibold text-stone-600 dark:text-stone-400">{label}</label>
       <select
         id={id}
         value={value}
@@ -120,15 +120,15 @@ export function Select<T extends string>({ label, value, onChange, options, clas
           </option>
         ))}
       </select>
-    </label>
+    </div>
   );
 }
 
 export function NumberField({ label, value, onChange, prefix, suffix, step = 1, min, max, hint, error }: { label: string; value: number; onChange: (v: number) => void; prefix?: string; suffix?: string; step?: number; min?: number; max?: number; hint?: string; error?: string }) {
   const id = useId();
   return (
-    <label htmlFor={id} className="block">
-      <span className="mb-1 block text-xs font-semibold text-stone-600 dark:text-stone-400">{label}</span>
+    <div className="block">
+      <label htmlFor={id} className="mb-1 block text-xs font-semibold text-stone-600 dark:text-stone-400">{label}</label>
       <div className={cx("flex items-center rounded-xl border bg-white dark:bg-night-3", error ? "border-red-500" : "border-stone-300 dark:border-stone-700")}>
         {prefix && <span className="pl-3 text-sm text-stone-500">{prefix}</span>}
         <input
@@ -146,7 +146,7 @@ export function NumberField({ label, value, onChange, prefix, suffix, step = 1, 
         {suffix && <span className="pr-3 text-sm text-stone-500">{suffix}</span>}
       </div>
       {error ? <span className="mt-1 block text-xs text-red-600 dark:text-red-400">{error}</span> : hint ? <span className="mt-1 block text-xs text-stone-500">{hint}</span> : null}
-    </label>
+    </div>
   );
 }
 
@@ -200,6 +200,7 @@ export function Formula({ latex, display = true, className }: { latex: string; d
       return latex;
     }
   }, [latex, display]);
+  if (display) return <div className={cx("max-w-full overflow-x-auto text-stone-900 dark:text-stone-100", className)} dangerouslySetInnerHTML={{ __html: html }} />;
   return <span className={cx("text-stone-900 dark:text-stone-100", className)} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
@@ -298,8 +299,8 @@ export function Tabs<T extends string>({ value, onChange, tabs, ariaLabel }: { v
 export function TextArea({ label, value, onChange, rows = 6, placeholder }: { label: string; value: string; onChange: (v: string) => void; rows?: number; placeholder?: string }) {
   const id = useId();
   return (
-    <label htmlFor={id} className="block">
-      <span className="mb-1 block text-xs font-semibold text-stone-600 dark:text-stone-400">{label}</span>
+    <div className="block">
+      <label htmlFor={id} className="mb-1 block text-xs font-semibold text-stone-600 dark:text-stone-400">{label}</label>
       <textarea
         id={id}
         rows={rows}
@@ -308,7 +309,7 @@ export function TextArea({ label, value, onChange, rows = 6, placeholder }: { la
         onChange={(e) => onChange(e.target.value)}
         className="w-full rounded-xl border border-stone-300 bg-white px-3 py-2 text-sm leading-relaxed text-stone-900 dark:border-stone-700 dark:bg-night-3 dark:text-stone-100"
       />
-    </label>
+    </div>
   );
 }
 

@@ -28,6 +28,14 @@
   --color-night-3: #26221e;
 }
 
+@layer base {
+  /* Single-column grids should never grow wider than their container (e.g. long formulas on phones).
+     grid-cols-* utilities override this at larger breakpoints. */
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 :root {
   color-scheme: light;
 }

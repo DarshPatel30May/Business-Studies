@@ -129,7 +129,7 @@ export function PrintSummary() {
     <article className="mx-auto max-w-3xl space-y-6 bg-white p-2 text-stone-900 print:max-w-none dark:bg-transparent dark:text-stone-100 print:dark:text-black">
       <div className="no-print flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-stone-200 p-4 dark:border-stone-800">
         <p className="text-sm">Use your browser's print dialog and choose “Save as PDF”. Navigation is hidden automatically.</p>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {TOPICS.map((x) => (
             <Link key={x.id} to={`/print/${x.id}`} className={cx("rounded-lg px-2 py-1 text-xs font-semibold", x.id === t.id ? `${TOPIC_THEME[x.id].bgSolid} text-white` : "border border-stone-300 dark:border-stone-700")}>{x.name}</Link>
           ))}

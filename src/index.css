@@ -1,0 +1,126 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/source-serif-4";
+@import "katex/dist/katex.min.css";
+@import "@xyflow/react/dist/style.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Source Serif 4 Variable", Georgia, "Times New Roman", serif;
+
+  --color-bronze-50: #fbf7f2;
+  --color-bronze-100: #f4eadb;
+  --color-bronze-200: #e8d3b5;
+  --color-bronze-300: #d9b68a;
+  --color-bronze-400: #c79660;
+  --color-bronze-500: #b07a43;
+  --color-bronze-600: #956236;
+  --color-bronze-700: #784d2d;
+  --color-bronze-800: #5f3e27;
+  --color-bronze-900: #4c3322;
+  --color-bronze-950: #2a1b11;
+
+  --color-paper: #faf8f5;
+  --color-night: #13110f;
+  --color-night-2: #1c1916;
+  --color-night-3: #26221e;
+}
+
+:root {
+  color-scheme: light;
+}
+:root.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  @apply bg-paper text-stone-800 antialiased dark:bg-night dark:text-stone-200;
+  font-feature-settings: "cv11", "ss01";
+}
+
+.font-display {
+  font-family: var(--font-serif);
+  font-optical-sizing: auto;
+}
+
+/* Focus ring for keyboard users */
+:focus-visible {
+  outline: 2px solid var(--color-bronze-500);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Flash highlight when navigating to an anchor via search or the syllabus */
+@keyframes focus-flash {
+  0% {
+    box-shadow: 0 0 0 0 rgb(176 122 67 / 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 14px rgb(176 122 67 / 0);
+  }
+}
+.focus-flash {
+  animation: focus-flash 1.4s ease-out 2;
+}
+
+/* React Flow theming */
+.react-flow__attribution {
+  display: none;
+}
+.react-flow__node {
+  cursor: pointer;
+}
+
+/* KaTeX sizing inside cards */
+.katex-display {
+  margin: 0.25rem 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+/* Print: show content only */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .print-break {
+    break-before: page;
+  }
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .print-card {
+    break-inside: avoid;
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Thin scrollbars */
+.scroll-thin {
+  scrollbar-width: thin;
+}
